@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: |
         cd src/NewsReader/NewsReader.MauiSystem
-        dotnet publish -f:net7.0-android -c:Debug             # Workaround for https://github.com/dotnet/linker/issues/3126
+        dotnet publish -f:net7.0-android -c:Release
 
   Windows:
     runs-on: windows-2022
